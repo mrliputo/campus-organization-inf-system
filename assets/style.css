@@ -1,0 +1,1094 @@
+/**
+ * Description of style.css
+ *
+ * @author Norman Syarif
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Modifikasi bootstrap
+ * ----------------------
+ */
+
+.btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+.btn-primary:hover {
+    background-color: #b82b00;
+    border-color: #ff5722;
+}
+
+.form-control:focus {
+    border-color: #ff5722;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 87, 34, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 87, 34, .6);
+}
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h4 {
+    margin-top: 25px;
+}
+.row {
+    margin-bottom: 20px;
+}
+.row .row {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/*[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+  }*/
+
+/*
+ * Callout styles copied from Bootstrap's main docs.
+ */
+/* Common styles for all types */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 3px solid #eee;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    background-color: #fff;
+    border-radius: 3px;
+}
+/* Variations */
+.bs-callout-danger {
+    background-color: #fdf7f7;
+    border-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    background-color: #fcf8f2;
+    border-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    background-color: #f4f8fa;
+    border-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+/*
+ * Chatbox
+ * ----------------------
+ */
+
+.chatbox {
+    width: 570px;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+}
+
+.conversation {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    height: 440px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.direct-chat-msg {
+    margin-bottom: 20px;
+}
+
+.direct-chat-text {
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 10px;
+    background: #d2d6de;
+    margin: 5px 0 0 50px;
+    color: #444444;
+}
+.direct-chat-text:after,
+.direct-chat-text:before {
+    position: absolute;
+    right: 100%;
+    top: 15px;
+    border: solid transparent;
+    border-right-color: #d2d6de;
+    content: ' ';
+    height: 0;
+    width: 0;
+    pointer-events: none;
+}
+
+.direct-chat-text:before {
+    border-width: 6px;
+    margin-top: -6px;
+}
+.right .direct-chat-text {
+    margin-right: 50px;
+    margin-left: 0;
+}
+.right .direct-chat-text:after,
+.right .direct-chat-text:before {
+    right: auto;
+    left: 100%;
+    border-right-color: transparent;
+    border-left-color: #ff5722;
+}
+.direct-chat-img {
+    border-radius: 50%;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.right .direct-chat-img {
+    float: right;
+}
+.direct-chat-info {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+.direct-chat-name {
+    font-weight: 600;
+}
+.direct-chat-timestamp {
+    color: #999;
+}
+
+.chat-warning {
+    color: #999;
+    line-height: 25px;
+    margin-bottom: 20px;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+.me {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.input-msg {
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.input-msg input {
+    width: 500px;
+    margin-right: 11px;
+    float: left;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input-msg button {
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/*
+ * CSS Sendiri
+ * ----------------------
+ */
+
+@font-face {
+    font-family: "Roboto regular";
+    src: url('roboto-regular.ttf');
+}
+
+body {
+    font-family: "Roboto regular";
+    background-color: #ecf0f5;
+}
+
+.clear {
+    clear: both;
+}
+
+.atas {
+    height: 70px;
+    color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#logo-header {
+    float: left;
+    position: relative;
+    top: 4px;
+    margin-right: 20px;
+}
+
+#logo-header img {
+    width: 60px;
+    height: auto;
+}
+
+#text-header {
+    position: relative;
+    top: 10px;
+    float: left;
+    font-size: 150%;
+    font-weight: bold;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.login-form {
+    margin-top: 175px;
+    clear: both;
+}
+
+.footer {
+    background-color: #ff5722;
+    height: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 110%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer span {
+    margin-top: 30px;
+    position: relative;
+    top: 20px;
+}
+
+#kelompok {
+    color: #3c8dbc;
+}
+
+#sisfo {
+    font-weight: bold;
+}
+
+#menu {
+    background-color: #282c34;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+#content {
+    min-height: 700px;
+    padding-bottom: 20px;
+}
+
+.footer-waktu-sudah-login {
+    border-top: 1px solid #d2d6de;
+    background-color: #fff;
+    height: 50px;
+    font-weight: normal;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+#footer-text {
+    position: relative;
+    top: 15px;
+    margin-left: 40%;
+}
+
+#profile {
+    text-align: center;
+    padding-top: 25px;
+}
+
+#profile img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+}
+
+#profile p {
+    color: #fff;
+}
+
+#nama {
+    font-size: 120%;
+}
+
+#jurusan {
+    font-size: 90%;
+}
+
+#search {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#search input {
+    width: 95%;
+    height: 30px;
+    background-color: #374850;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 90%;
+    color: #fff;
+}
+
+.menu-list {
+    margin-top: 25px;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.inaktif, .aktif {
+    cursor: pointer;
+    margin: 0;
+}
+
+.inaktif {
+    padding-left: 5px;
+}
+
+.inaktif:hover {
+    padding-left: 1px;
+}
+
+.inaktif:hover, .aktif {
+    background-color: #1e282c;
+    border-left: 4px solid #3c8dbc;
+    color: #b8b8b8;
+}
+
+.menu-list ul li a {
+    display: block;
+    padding: 20px 15px;
+}
+
+.menu-list ul span ul {
+    background-color: #374850;
+    font-size: 80%;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list ul span ul li {
+    padding-left: 31px;
+}
+
+.menu-list ul span ul li {
+    cursor: pointer;
+}
+
+.menu-list ul span ul li a {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.menu-list ul span ul li a:hover {
+    padding-left: 11px;
+}
+
+.menu-list ul span ul li:hover {
+    border-left: 4px solid #3c8dbc;
+    background-color: #1e282c;
+}
+
+.logout-dan-notif {
+    margin-right: 20px;
+    text-align: center;
+}
+
+.logout-dan-notif a {
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 10px;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    width: 130px;
+    outline: none;
+}
+
+.logout-dan-notif a:hover {
+    background-color: #c42e00;
+}
+
+#maksa_nian {
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    width: 500px;
+}
+
+.bio {
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.bio img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 5px solid #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    float: left;
+}
+
+.anggota img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    float: left
+}
+
+.bio-text, .kelola {
+    line-height: 25px;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+
+.bio-text {
+    top: 60px;
+}
+
+.kelola {
+    top: 45px;
+}
+
+.bio-name {
+    font-size: 150%;
+}
+
+#nama {
+    font-size: 130%;
+}
+
+.col-md-2setengah {
+    @extend .col-md-1;
+    width: 19%;
+}
+
+.col-md-9setengah {
+    @extend .col.md-1;
+    width: 83%;
+}
+
+.info-event {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.left {
+    margin: 6px;
+}
+
+
+.bold {
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding: 0;
+}
+
+.hitler a {
+    color: #fff;
+}
+
+#setengah {
+    height: 58px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+#setengah p {
+    margin-left: 10px;
+}
+
+.img-logo {
+    margin-bottom: 15px;
+}
+
+.org, .chatroom {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.org {
+    width: 30%;
+}
+
+.chatroom {
+    width: 20%;
+}
+
+.anggota-div {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+
+.absensi-div {
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.col-md-offset-dibawah1 {
+    margin-left: 4%;
+}
+
+.btn-no-padding {
+    padding: 0 12px;
+    font-weight: bold;
+}
+
+.nama-org, .nama-chat {
+    height: 30px;
+    background-color: #ff5722;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    font-size: 120%;
+    line-height: 30px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.nama-org a, .nama-chat a{
+    color: #fff;
+}
+
+.nama-org {
+    width: 107.5%;
+}
+
+.nama-chat {
+    width: 111%;
+}
+
+.about-box {
+    height: 500px;
+}
+
+.profil-box {
+    height: auto;
+}
+
+.about-box, .profil-box {
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#about-title {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+#edit {
+    font-size: 80%;
+    padding: 2px 5px;
+    font-weight: normal;
+}
+
+.profil-box img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nama-jurusan, .profil-org, .event-page {
+    font-weight: bold;
+    float: left;
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+
+.nama {
+    font-size: 130%;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+#profil-organisasi th {
+    width: 200px;
+}
+
+tr {
+    text-align: left;
+}
+
+.bio td {
+    font-weight: bold;
+}
+
+.bio th {
+    font-weight: normal;
+}
+
+
+.profil-bio {
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profil-bio img {
+    margin-left: 20px;
+}
+
+.float-text, .float-text-org {
+    z-index: 999;
+    font-weight: bold;
+    color: #fff;
+    width: 56.5%;
+    margin-left: 21px;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.float-text {
+    background-color: #ff5722;
+    top: 103px;
+}
+
+.float-text-org {
+    top: 81px;
+}
+
+.info {
+    background-color: #269abc;
+}
+
+.event {
+    background-color: #ff5722;
+}
+
+.kepanjangan-org {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.org-event {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.kekiri-sedikit {
+    position: relative;
+    left: -5px;
+}
+
+.hapus-edit-bio {
+    position: absolute;
+    left: 114px;
+    padding: 3px;
+}
+
+.modal-body p, .modal-title {
+    color: #000;
+}
+
+.kebawah-sedikit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#prodi {
+    width: 35%;
+}
+
+#nama-org {
+    width: 45%;
+}
+
+#operasi {
+    width: 17%;
+}
+
+.hapus, .button-event, .button-info {
+    padding: 3px 6px;
+    font-size: 80%;
+    border: none;
+}
+
+.button-event {
+    background-color: #ff5722;
+}
+
+.button-event:hover {
+    background-color: #b82b00;
+}
+
+.button-info {
+    background-color: #31b0d5;
+}
+
+.button-info:hover {
+    background-color: #3c8dbc;
+}
+
+#tanggal {
+    width: 20%;
+}
+
+#operasi-absen {
+    width: 3%
+}
+
+.absen-container {
+    width: 90%;
+    height: auto;
+    margin: 50px auto 0 auto;
+    font-family: "times new roman";
+}
+
+.absen-header-img {
+    float: left;
+}
+
+.absen-header-text {
+    text-align: center;
+    line-height: 33px;
+}
+
+.daftar-hadir {
+    font-size: 150%;
+}
+
+.absen-nama-tanggal {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#absen-nama {
+    width: 30%;
+}
+
+.absen-nama-anggota {
+    margin-bottom: 60px;
+}
+
+.absen-nama-anggota table {
+    border-collapse: collapse;
+}
+
+.absen-nama-anggota table, .absen-nama-anggota th, .absen-nama-anggota td {
+    border: 1px solid #000;
+}
+
+.absen-nama-anggota th {
+    text-align: center;
+}
+
+#absen-no {
+    width: 5%;
+}
+
+#absen-prodi {
+    width: 28%;
+}
+
+#absen-nama-anggota {
+    width: 52%;
+}
+
+#absen-paraf {
+    width: 15%;
+}
+
+.absen-ttd {
+    width: 20%;
+    text-align: center;
+}
+
+#nama-ketua {
+    margin-top: 60px;
+}
+
+.badge {
+    background-color: #2b9ebf;
+    color: #fff;
+}
+
+#logout-modal {
+    text-align: left;
+}
+
+.notif-box {
+    background-color: #e1e1e1;
+    width: 25%;
+    position: absolute;
+    height: 283px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    z-index: 900;
+    right: 165px;
+    display: none;
+}
+
+.notif-content {
+    background-color: #fff;
+    width: 95%;
+    height: 205px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+
+.notif-content ul {
+    list-style: none;
+}
+
+.notif-content ul li a {
+    padding: 10px;
+    display: block;
+    color: #282c34;
+    text-decoration: none;
+}
+
+.notif-content ul li a:hover {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.center {
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.waktu {
+    font-size: 90%;
+    color: #374850;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+
+#close-button {
+    cursor: pointer;
+}
+
+.modal-footer button {
+    width: 14%;
+}
+
+#list-kelompok {
+    list-style: none;
+}
+
+#list-kelompok li {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+#list-kelompok span {
+    font-size: 75%;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#pengembang {
+    font-size: 110%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#kelompok-pengembang {
+    font-style: italic;
+}
+
+#client {
+    margin-top: 30px;
+}
+
+.salah {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.modal-footer a {
+    padding: 6px 0;
+    width: 14%;
+}
+
+.modal-footer button {
+    transition: all 0.4s ease-in-out;
+}
+
+.modal-footer a:hover {
+    background-color: #449d44;
+}
+
+.awal-event-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.profil-img img, .profil-box img {
+    width: 100px;
+    height: 100px;
+}
+
+#change-button {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 82px;
+    background-color: #5bc0de;
+    width: 98px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+}
+
+#change-button a {
+    display: block;
+    font-size: 90%;
+    color: #fff;
+}
+
+#change-button a:hover {
+    background-color: #000;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #31b0d5;
+    text-decoration: none;
+}
+
+
+.pass th {
+    width: 30%;
+}
+
+.pass-field {
+    width: 60%;
+}
+
+#warning p {
+    position: absolute;
+    left: 530px;
+    text-align: left;
+}
+
+#change-button a{
+    text-decoration: none;
+}
+
+.left th, .left td {
+    padding: 5px !important;
+}
+
+.left th {
+    width: 28%;
+}
+
+.semua {
+    margin-top: 130px;
+}
+
+#semua-event {
+    position: relative;
+    left: 274px;
+}
+
+#semua-event a, #semua-info a {
+    font-weight: bold;
+}
+
+#semua-info {
+    position: relative;
+    left: 375px;
+}
+
+.btn-event {
+    padding: 2px 8px;
+    border: none;
+    background-color: #449d44;
+}
+
+.btn-event:hoverf {
+    background-color: green;
+}
+
+.absen-header-img img {
+    margin-left: 50px;
+    width: 120px;
+    height: 120px;
+}
